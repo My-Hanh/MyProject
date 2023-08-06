@@ -1,0 +1,63 @@
+/* The navbar */
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    opacity: 0.6
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.btn_shop {
+    float: right;
+
+    background-color: aqua;
+    color: black;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_shop:hover {
+    background-color: white;
+    color: aqua;
+}
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    opacity: 0.6;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.footer ion-icon{
+    font-size: 200%;
+    color: aqua;
+    transition: color 0.2s;
+}
+
+.footer ion-icon:hover{
+    color: gray;
+}

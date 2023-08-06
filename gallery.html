@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SoftSpotSoul</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style_gallery.css">
+    <link rel="stylesheet" href="style_topnav.css">
+
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="script.js">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+
+
+<body>
+
+
+
+    <div class="container">
+        <!------ navigation bar section ------>
+        <div class="topnav">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="">Gallery</a>
+            <button class="btn_shop" onclick="window.location.href='https://www.etsy.com/ch/shop/SoftSpotSoul';">Online Shop</button>
+        </div>
+
+        <!------footer section ------>
+        <div class="footer">
+            <a href="https://www.instagram.com/softspot_digitalart/">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="https://www.deviantart.com/soul-in-space">
+                <ion-icon name="logo-deviantart"></ion-icon>
+            </a>
+            <a href="https://www.pinterest.ch/SoftSpotSoul_digitalart/">
+                <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <!------ background section ------>
+    <div class="background-img"></div>
+
+    <!------ content section ------>
+    <div class="content">
+       
+        <div class="full-img" id="fullImgBox">
+            <img src="images/gallery/BearHoney.png" alt="" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+            <img src="images/gallery/BearHoney.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/BearStar_Background.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/BlackCatLuck.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Calm.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Cucumber_withBackground.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Flower.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Fly.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/HugeTeddyHug.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Ladybug_postcard.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/LetterBox.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Sleepy.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Strawberry.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Watermelon.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Desert.png" alt="" onclick="openFullImg(this.src)">
+            <img src="images/gallery/Frog.png" alt="" onclick="openFullImg(this.src)">
+
+        </div>
+        
+         <div class="bg-front"></div>
+        
+    </div>
+
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

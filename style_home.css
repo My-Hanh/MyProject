@@ -1,0 +1,232 @@
+    * {
+        margin: 0;
+        border: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    .background-img {
+        background-image: url("images/background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        width: 100vw;
+
+
+        /* Needed to position the navbar */
+        position: absolute;
+    }
+
+    .content {
+        /*----- center rectangle ----*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        overflow: hidden;
+    }
+
+    h1 {
+        font-family: "Lobster Two", "Century Gothic", "Arial Rounded MT Bold", "Calibri", "Arial", sans-serif, monospace;
+        font-size: 150px;
+        color: #005580;
+    }
+
+    .text {
+        position: absolute;
+        text-align: justify;
+        overflow-x: hidden;
+        overflow-y: auto;
+        top: center;
+        left: center;
+
+        font-family: "Century Gothic", "Arial Rounded MT Bold", "Calibri", "Arial", sans-serif, monospace;
+    }
+
+    .bg-front {
+        /*background-image: url("images/bg-font.png");
+        background-position: bottom right;
+        background-repeat: no-repeat;*/
+
+        /*background white*/
+        /*
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        background-color: white;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+        height: 100%;
+        */
+    }
+
+    .text-content {
+        margin: auto;
+    }
+
+    .col-3 {
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    }
+
+    .col-3 img {
+        width: 90%;
+    }
+
+    .small-container {
+        max-width: 1000px;
+
+        padding-left: 0px;
+        padding-right: 0px;
+
+        /*
+        column-count: 3;
+        column-gap: normal;
+        */
+    }
+
+    /* Position the navbar container inside the image */
+    .container {
+        position: fixed;
+        margin: 0px;
+    
+        z-index: 11;
+    }
+
+    .btn {
+        background-color: aqua;
+        color: black;
+        padding: 12px 20px;
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px grey;
+        cursor: pointer;
+        font-size: 25px;
+        width: 50%;
+        line-height: 100%;
+        min-width: 120px;
+        min-height: 40px;
+        display: inline-block;
+        position: relative;
+        top: 42vh;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        text-align: center;
+        
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: aqua;
+    }
+
+
+
+
+
+    .banner_container {
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+
+        top: 0px;
+    }
+
+    .img-container {
+        display: inline-block;
+        overflow: hidden;
+        margin-left: -2.8px;
+        margin-right: -2.8px;
+        width: 170px;
+        vertical-align: top;
+        border-radius: 0px 0px 80px 80px;
+        animation-name: flow;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-delay: -2s;
+        transition-timing-function: cubic-bezier(0, .57, 1, .46);
+        box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .second-animation {
+        animation-delay: -1.5s;
+        animation-duration: 8s;
+    }
+
+    .third-animation {
+        animation-delay: -1s;
+        animation-duration: 8s;
+    }
+
+    .fourth-animation {
+        animation-delay: -0.5s;
+        animation-duration: 8s;
+    }
+
+    .fifth-animation {
+        animation-delay: 0s;
+        animation-duration: 8s;
+    }
+
+    .sixth-animation {
+        animation-delay: 0.5s;
+        animation-duration: 8s; 
+    }
+
+    /*
+    .seventh-animation {
+        animation-delay: 1s;
+    }*/
+
+    .img {
+        object-fit: cover;
+        width: 170px;
+        height: 100vh;
+        margin-top: -90px;
+    }
+
+    .nba {
+        margin-top: -20px;
+    }
+
+    @keyframes flow {
+        0% {
+            height: 20%;
+            border-radius: 0px 0px 30px 30px;
+        }
+
+        50% {
+            height: 80%;
+            border-radius: 0px 0px 100px 100px;
+        }
+
+        100% {
+            height: 20%;
+            border-radius: 0px 0px 30px 30px;
+        }
+    }
+
+    @media only screen and (max-width: 1200px) {
+        #img-7 {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 1028px) {
+        #img-1 {
+            display: none;
+        }
+    }
+
+    @media only screen and (max-width: 860px) {
+        #img-6 {
+            display: none;
+        }
+    }
