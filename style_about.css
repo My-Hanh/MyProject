@@ -40,6 +40,7 @@
         align-items: center;
 
         overflow: hidden;
+        height: 60vh
     }
 
     .text {
@@ -89,7 +90,7 @@
         position: relative;
         overflow: visible;
 
-        top: 60vh;
+        top: 20px;
         justify-content: center;
         align-items: center;
     }
