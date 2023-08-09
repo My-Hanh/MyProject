@@ -31,8 +31,21 @@
 
     h1 {
         font-family: "Lobster Two", "Century Gothic", "Arial Rounded MT Bold", "Calibri", "Arial", sans-serif, monospace;
-        font-size: 720%;
         color: #005580;
+    }
+
+    /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 601px) {
+        h1 {
+            font-size: 200px;
+        }
+    }
+
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+        h1 {
+            font-size: 70px;
+        }
     }
 
     .text {
@@ -156,7 +169,7 @@
 
     .img-container {
         display: inline-block;
-        overflow: hidden;
+        overflow:hidden;
         margin-left: -2.8px;
         margin-right: -2.8px;
         position: relative;
@@ -169,6 +182,11 @@
         animation-delay: -2s;
         transition-timing-function: cubic-bezier(0, .57, 1, .46);
         box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .first-animation {
+        animation-delay: -2s;
+        animation-duration: 8s;
     }
 
     .second-animation {
@@ -195,11 +213,6 @@
         animation-delay: 0.5s;
         animation-duration: 8s;
     }
-
-    /*
-    .seventh-animation {
-        animation-delay: 1s;
-    }*/
 
     .img {
         object-fit: cover;
@@ -229,20 +242,4 @@
         }
     }
 
-    @media only screen and (max-width: 1200px) {
-        #img-7 {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: 1028px) {
-        #img-1 {
-            display: none;
-        }
-    }
-
-    @media only screen and (max-width: 860px) {
-        #img-6 {
-            display: none;
-        }
-    }
+    
