@@ -43,18 +43,16 @@
 
     .img-gallery {
         position: absolute;
-
         display: grid;
-
-
         z-index: 1;
+        top: 10%;
+        width: 90%;
+        left:  6%;
     }
 
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
     @media screen and (min-width: 601px) {
         .img-gallery {
-            top: 10%;
-            width: 80%;
             grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
             grid-gap: 30px;
         }
@@ -63,8 +61,6 @@
     /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
     @media screen and (max-width: 600px) {
         .img-gallery {
-            top: 10%;
-            width: 80%;
             grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             grid-gap: 10px;
         }
